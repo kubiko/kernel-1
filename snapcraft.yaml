@@ -1,5 +1,5 @@
 name: roseapple-pi-kernel
-version: 3.10.37
+version: 3.10.37-1
 summary: A roseapple kernel built from source
 description: This is the reference kernel from xapp-le branch Ubuntu-Snappy-Core
 type: kernel
@@ -16,6 +16,9 @@ parts:
             - CONFIG_LOCALVERSION="-roseapple"
             - CONFIG_DEBUG_INFO=n
             - CONFIG_SQUASHFS=m
+            - CONFIG_DEVPTS_MULTIPLE_INSTANCES=y
+            - CONFIG_RTL8192U=m
+            - CONFIG_BT_BCM=m
         kernel-initrd-modules:
             - squashfs
         kernel-image-target: zImage
