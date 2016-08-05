@@ -18,7 +18,6 @@ parts:
             - CONFIG_SQUASHFS=m
             - CONFIG_DEVPTS_MULTIPLE_INSTANCES=y
             - CONFIG_RTL8192U=m
-            - CONFIG_BT_BCM=m
             - CONFIG_MAC80211_LEDS=y
             - CONFIG_RFKILL_LEDS=y
             - CONFIG_ATH_COMMON=y
